@@ -6,7 +6,7 @@ button.addEventListener("click", () => {
 	if (existingShow) {
 		body.removeChild(existingShow);
 	}
-	let choice = generateNumber(1, 5);
+	let choice = generateNumber(1, 6);
 	const show = document.createElement("div");
 	show.id = "showDiv";
 	show.style.cssText =
@@ -18,9 +18,11 @@ button.addEventListener("click", () => {
 	} else if (choice === 3) {
 		show.textContent = "It's so unbelievably over..";
 	} else if (choice == 4) {
-		show.textContent = "We're so so so back";
+		show.textContent = "We're so fucking back";
 	} else if (choice === 5) {
-		show.textContent = "Over status unknown.. you might be lost in the sauce";
+		show.textContent = "It's so insanely over, you're lost in the sauce";
+	} else if (choice === 6) {
+		show.textContent = "We're so back fr";
 	}
 	body.appendChild(show);
 	button.innerHTML = "&#x21bb";
